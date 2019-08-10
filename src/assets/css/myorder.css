@@ -1,0 +1,249 @@
+body {
+    background: #f3f3f3
+}
+
+.order-content {
+    overflow: hidden
+}
+
+.order-list .order-item {
+    background-color: #fff;
+    margin-bottom: 10px
+}
+
+.order-list .order-item .order-title {
+    display: -webkit-box;
+    display: flex;
+    padding: 0 15px
+}
+
+.order-list .order-item .order-title .cinema-name {
+    display: inline-block;
+    text-align: left;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    line-height: 38px;
+    height: 38px;
+    font-size: 13px;
+    color: #666;
+    margin-right: 6px
+}
+
+.order-list .order-item .order-title .cinema-name:after {
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-left: 1px solid #777;
+    border-top: 1px solid #777;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.order-list .order-item .order-title .left-time,
+.order-list .order-item .order-title .leftPaySecond {
+    display: inline-block;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    line-height: 38px;
+    height: 38px;
+    font-size: 13px;
+    color: #ef4238
+}
+
+.order-list .order-item .order-info {
+    margin: 12px 15px;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: flex
+}
+
+.order-list .order-item .order-info img {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 57px;
+    height: 80px
+}
+
+.order-list .order-item .order-info .order-desc {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    margin-left: 12px;
+    margin-top: 4px;
+    overflow: hidden
+}
+
+.order-list .order-item .order-info .order-desc .movie-name {
+    font-size: 15px;
+    color: #000;
+    line-height: 21px;
+    height: 21px
+}
+
+.order-list .order-item .order-info .order-desc .showTime {
+    margin-top: 5px
+}
+
+.order-list .order-item .order-info .order-desc .position,
+.order-list .order-item .order-info .order-desc .showTime {
+    font-size: 12px;
+    color: #888;
+    line-height: 18px;
+    height: 18px
+}
+
+.order-list .order-item .order-info .link-status {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    margin-left: 12px;
+    width: 48px
+}
+
+.order-list .order-item .order-info .link-status div {
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 0 10px;
+    display: inline-block;
+    color: #fff;
+    background-color: #f03d37;
+    border: 1px solid #f03d37
+}
+
+.order-list .order-item .order-info .link-status.see {
+    width: 84px
+}
+
+.order-list .order-item .order-info .link-status.see div {
+    color: #f03d37;
+    background-color: #fff;
+    border: 1px solid #f03d37
+}
+
+.order-list .order-item .order-info .link-status.rebuy {
+    width: 70px
+}
+
+.order-list .order-item .order-info .link-status.disabled div {
+    background-color: #aaa;
+    border: 1px solid #aaa
+}
+
+.order-list .order-item .order-more {
+    margin-left: 15px;
+    padding: 0 15px 0 0
+}
+
+.order-list .order-item .order-more .price,
+.order-list .order-item .order-more .status {
+    line-height: 42px;
+    height: 42px;
+    font-size: 13px;
+    color: #888;
+    display: inline-block
+}
+
+.order-list .order-item .order-more .status {
+    color: #333;
+    float: right
+}
+
+.order-list .order-item .order-more .status.refund a {
+    display: inline-block;
+    color: #333
+}
+
+.order-list .order-item .order-more .status.refund a:after {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #777;
+    border-top: 1px solid #777;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.order-list .order-item.good .order-title .cinema-name:after {
+    display: none
+}
+
+.order-list .order-item.good .order-title .left-time {
+    color: #666
+}
+
+.order-list .order-item.good .order-info img {
+    width: 57px;
+    height: 57px
+}
+
+.history-link,
+.no-data .wrapper {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+.no-data {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0
+}
+
+.no-data .wrapper {
+    background-image: url(/bs/file/?f=myfe/canary:static/deploy/dpmmweb/client/dpmmweb/component/myorder/img/order-empty-1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110px 110px;
+    top: 50%;
+    margin-top: -100px;
+    height: 200px
+}
+
+.no-data .wrapper .tip-text {
+    display: block;
+    padding-top: 120px;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    color: #999
+}
+
+.history-link {
+    bottom: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    color: #999
+}
+
+.history-link a {
+    display: inline-block;
+    color: #f03d37;
+    margin-left: 4px
+}
+
+.history-link a:after {
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-left: 1px solid #f03d37;
+    border-top: 1px solid #f03d37;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.history-link.history-more {
+    position: relative;
+    margin-top: 18px
+}
